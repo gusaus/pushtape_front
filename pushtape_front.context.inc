@@ -13,6 +13,57 @@ function pushtape_front_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'background_default';
+  $context->description = '';
+  $context->tag = 'backgrounds';
+  $context->conditions = array(
+    'sitewide' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'backstretch' => array(
+      'source' => array(
+        'type' => 'path',
+        'entity' => array(
+          'entity_type' => 'file',
+          'fieldable_panels_pane' => array(
+            'field' => 'field_basic_image_image',
+          ),
+          'node' => array(
+            'field' => 'field_featured_image',
+          ),
+          'taxonomy_term' => array(
+            'field' => 'field_featured_image',
+          ),
+          'user' => array(
+            'field' => 'field_user_picture',
+          ),
+          'ids' => '3',
+        ),
+        'path' => 'profiles/pushtape/modules/pushtape_apps/pushtape_front/images/background1.jpg',
+      ),
+      'image_style' => '',
+      'element' => '',
+      'element_other' => '',
+      'duration' => '1000',
+      'fade' => '1000',
+      'center_x' => 1,
+      'center_y' => 1,
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('backgrounds');
+  $export['background_default'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'background_events';
   $context->description = '';
   $context->tag = 'backgrounds';
@@ -73,6 +124,8 @@ function pushtape_front_context_default_contexts() {
       'values' => array(
         'releases' => 'releases',
         'release/*' => 'release/*',
+        'discography' => 'discography',
+        'discography/*' => 'discography/*',
         'track/*' => 'track/*',
         'album/*' => 'album/*',
       ),
