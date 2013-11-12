@@ -344,7 +344,13 @@ function pushtape_front_context_default_contexts() {
         'block-1' => array(
           'module' => 'block',
           'delta' => '1',
-          'region' => 'footer',
+          'region' => 'footer_first',
+          'weight' => '-9',
+        ),
+        'menu-menu-social-connection' => array(
+          'module' => 'menu',
+          'delta' => 'menu-social-connection',
+          'region' => 'footer_second',
           'weight' => '-10',
         ),
       ),
