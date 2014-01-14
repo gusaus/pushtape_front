@@ -341,16 +341,10 @@ function pushtape_front_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'block-1' => array(
-          'module' => 'block',
-          'delta' => '1',
-          'region' => 'footer_first',
-          'weight' => '-9',
-        ),
-        'menu-menu-social-connection' => array(
-          'module' => 'menu',
-          'delta' => 'menu-social-connection',
-          'region' => 'footer_second',
+        'system-powered-by' => array(
+          'module' => 'system',
+          'delta' => 'powered-by',
+          'region' => 'footer',
           'weight' => '-10',
         ),
       ),
