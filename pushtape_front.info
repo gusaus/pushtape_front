@@ -10,6 +10,7 @@ dependencies[] = context_ui
 dependencies[] = ctools
 dependencies[] = defaultconfig
 dependencies[] = features
+dependencies[] = features_override
 dependencies[] = flexslider
 dependencies[] = flexslider_views
 dependencies[] = menu
