@@ -156,7 +156,7 @@ function pushtape_front_default_page_manager_pages() {
       ),
       'override_title' => '',
       'override_title_text' => '',
-      'view_mode' => 'teaser',
+      'view_mode' => 'featured',
       'widget_title' => 'Featured Album',
       'items_per_page' => NULL,
       'use_pager' => NULL,
