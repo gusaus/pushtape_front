@@ -17,9 +17,17 @@ function pushtape_front_context_default_contexts() {
   $context->description = '';
   $context->tag = 'backgrounds';
   $context->conditions = array(
-    'sitewide' => array(
+    'node' => array(
       'values' => array(
-        1 => 1,
+        'panopoly_page' => 'panopoly_page',
+      ),
+      'options' => array(
+        'node_form' => '1',
+      ),
+    ),
+    'path' => array(
+      'values' => array(
+        '<front>' => '<front>',
       ),
     ),
   );

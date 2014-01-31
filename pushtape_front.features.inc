@@ -111,64 +111,54 @@ function pushtape_front_panelizer_defaults_override_alter(&$data) {
     $data['node:panopoly_page:default:default']->display->content['new-5'] = (object) array(
           'pid' => 'new-5',
           'panel' => 'contentmain',
-          'type' => 'entity_field',
-          'subtype' => 'node:body',
+          'type' => 'node_links',
+          'subtype' => 'node_links',
           'shown' => TRUE,
           'access' => array(),
           'configuration' => array(
-            'label' => 'hidden',
-            'formatter' => 'text_default',
-            'delta_limit' => 0,
-            'delta_offset' => 0,
-            'delta_reversed' => FALSE,
-            'formatter_settings' => array(),
             'context' => 'panelizer',
-            'override_title' => 1,
+            'override_title' => FALSE,
             'override_title_text' => '',
+            'build_mode' => 'default',
+            'identifier' => '',
+            'link' => TRUE,
           ),
           'cache' => array(),
-          'css' => array(),
+          'css' => array(
+            'css_class' => 'link-wrapper',
+          ),
           'extras' => array(),
-          'position' => 1,
+          'position' => 2,
           'locks' => array(),
         ); /* WAS: '' */
-    $data['node:panopoly_page:default:default']->display->content['new-6']->configuration['build_mode'] = 'default'; /* WAS: '' */
-    $data['node:panopoly_page:default:default']->display->content['new-6']->configuration['identifier'] = ''; /* WAS: '' */
-    $data['node:panopoly_page:default:default']->display->content['new-6']->configuration['link'] = TRUE; /* WAS: '' */
-    $data['node:panopoly_page:default:default']->display->content['new-6']->configuration['override_title'] = FALSE; /* WAS: 1 */
-    $data['node:panopoly_page:default:default']->display->content['new-6']->css['css_class'] = 'link-wrapper'; /* WAS: '' */
-    $data['node:panopoly_page:default:default']->display->content['new-6']->position = 2; /* WAS: 0 */
-    $data['node:panopoly_page:default:default']->display->content['new-6']->subtype = 'node_links'; /* WAS: 'node:field_featured_image' */
-    $data['node:panopoly_page:default:default']->display->content['new-6']->type = 'node_links'; /* WAS: 'entity_field' */
-    $data['node:panopoly_page:default:default']->display->content['new-7']->configuration['formatter'] = 'taxonomy_term_reference_link'; /* WAS: 'text_default' */
-    $data['node:panopoly_page:default:default']->display->content['new-7']->configuration['label'] = 'inline'; /* WAS: 'hidden' */
-    $data['node:panopoly_page:default:default']->display->content['new-7']->position = 3; /* WAS: 1 */
-    $data['node:panopoly_page:default:default']->display->content['new-7']->subtype = 'node:field_featured_categories'; /* WAS: 'node:body' */
+    $data['node:panopoly_page:default:default']->display->content['new-6']->configuration['formatter'] = 'taxonomy_term_reference_link'; /* WAS: 'image' */
+    $data['node:panopoly_page:default:default']->display->content['new-6']->configuration['label'] = 'inline'; /* WAS: 'hidden' */
+    $data['node:panopoly_page:default:default']->display->content['new-6']->position = 3; /* WAS: 0 */
+    $data['node:panopoly_page:default:default']->display->content['new-6']->subtype = 'node:field_featured_categories'; /* WAS: 'node:field_featured_image' */
+    $data['node:panopoly_page:default:default']->display->content['new-7']->configuration['formatter'] = 'image'; /* WAS: 'text_default' */
+    $data['node:panopoly_page:default:default']->display->content['new-7']->configuration['formatter_settings']['image_link'] = ''; /* WAS: '' */
+    $data['node:panopoly_page:default:default']->display->content['new-7']->configuration['formatter_settings']['image_style'] = 'panopoly_image_half'; /* WAS: '' */
+    $data['node:panopoly_page:default:default']->display->content['new-7']->position = 0; /* WAS: 1 */
+    $data['node:panopoly_page:default:default']->display->content['new-7']->style = ''; /* WAS: '' */
+    $data['node:panopoly_page:default:default']->display->content['new-7']->subtype = 'node:field_featured_image'; /* WAS: 'node:body' */
     $data['node:panopoly_page:default:default']->display->content['new-8']->configuration['delta_limit'] = 0; /* WAS: '' */
     $data['node:panopoly_page:default:default']->display->content['new-8']->configuration['delta_offset'] = 0; /* WAS: '' */
     $data['node:panopoly_page:default:default']->display->content['new-8']->configuration['delta_reversed'] = FALSE; /* WAS: '' */
-    $data['node:panopoly_page:default:default']->display->content['new-8']->configuration['formatter'] = 'image'; /* WAS: '' */
-    $data['node:panopoly_page:default:default']->display->content['new-8']->configuration['formatter_settings'] = array(
-      'image_style' => 'panopoly_image_half',
-      'image_link' => '',
-    ); /* WAS: '' */
+    $data['node:panopoly_page:default:default']->display->content['new-8']->configuration['formatter'] = 'text_default'; /* WAS: '' */
+    $data['node:panopoly_page:default:default']->display->content['new-8']->configuration['formatter_settings'] = array(); /* WAS: '' */
     $data['node:panopoly_page:default:default']->display->content['new-8']->configuration['label'] = 'hidden'; /* WAS: '' */
     $data['node:panopoly_page:default:default']->display->content['new-8']->configuration['override_title'] = 1; /* WAS: FALSE */
     $data['node:panopoly_page:default:default']->display->content['new-8']->css = array(); /* WAS: '' */
-    $data['node:panopoly_page:default:default']->display->content['new-8']->position = 0; /* WAS: 2 */
+    $data['node:panopoly_page:default:default']->display->content['new-8']->position = 1; /* WAS: 2 */
     $data['node:panopoly_page:default:default']->display->content['new-8']->style = ''; /* WAS: '' */
-    $data['node:panopoly_page:default:default']->display->content['new-8']->subtype = 'node:field_featured_image'; /* WAS: 'node_links' */
+    $data['node:panopoly_page:default:default']->display->content['new-8']->subtype = 'node:body'; /* WAS: 'node_links' */
     $data['node:panopoly_page:default:default']->display->content['new-8']->type = 'entity_field'; /* WAS: 'node_links' */
     $data['node:panopoly_page:default:default']->display->panels['contentmain']['0'] = 'new-5'; /* WAS: 'new-6' */
     $data['node:panopoly_page:default:default']->display->panels['contentmain']['1'] = 'new-6'; /* WAS: 'new-7' */
     $data['node:panopoly_page:default:default']->display->panels['contentmain']['2'] = 'new-7'; /* WAS: 'new-8' */
     $data['node:panopoly_page:default:default']->display->panels['contentmain']['3'] = 'new-8'; /* WAS: 'new-9' */
-    unset($data['node:panopoly_page:default:default']->display->content['new-6']->configuration['delta_limit']);
-    unset($data['node:panopoly_page:default:default']->display->content['new-6']->configuration['delta_offset']);
-    unset($data['node:panopoly_page:default:default']->display->content['new-6']->configuration['delta_reversed']);
-    unset($data['node:panopoly_page:default:default']->display->content['new-6']->configuration['formatter']);
-    unset($data['node:panopoly_page:default:default']->display->content['new-6']->configuration['formatter_settings']);
-    unset($data['node:panopoly_page:default:default']->display->content['new-6']->configuration['label']);
+    unset($data['node:panopoly_page:default:default']->display->content['new-6']->configuration['formatter_settings']['image_link']);
+    unset($data['node:panopoly_page:default:default']->display->content['new-6']->configuration['formatter_settings']['image_style']);
     unset($data['node:panopoly_page:default:default']->display->content['new-8']->configuration['build_mode']);
     unset($data['node:panopoly_page:default:default']->display->content['new-8']->configuration['identifier']);
     unset($data['node:panopoly_page:default:default']->display->content['new-8']->configuration['link']);
@@ -176,114 +166,94 @@ function pushtape_front_panelizer_defaults_override_alter(&$data) {
   }
   if (isset($data['node:panopoly_page:default:featured'])) {
     $data['node:panopoly_page:default:featured']->display->content['new-10']->configuration = array(
+      'link' => TRUE,
       'context' => 'panelizer',
-      'override_title' => 0,
+      'override_title' => FALSE,
       'override_title_text' => '',
-      'delta_limit' => 0,
-      'delta_offset' => 0,
-      'delta_reversed' => FALSE,
-      'formatter' => 'text_summary_or_trimmed',
-      'label' => 'hidden',
+      'build_mode' => 'featured',
+      'identifier' => '',
     ); /* WAS: '' */
-    $data['node:panopoly_page:default:featured']->display->content['new-10']->position = 2; /* WAS: 0 */
-    $data['node:panopoly_page:default:featured']->display->content['new-10']->subtype = 'node:body'; /* WAS: 'node:field_featured_image' */
-    $data['node:panopoly_page:default:featured']->display->content['new-11']->configuration['build_mode'] = 'featured'; /* WAS: '' */
-    $data['node:panopoly_page:default:featured']->display->content['new-11']->configuration['identifier'] = ''; /* WAS: '' */
-    $data['node:panopoly_page:default:featured']->display->content['new-11']->configuration['link'] = TRUE; /* WAS: 1 */
-    $data['node:panopoly_page:default:featured']->display->content['new-11']->configuration['override_title'] = FALSE; /* WAS: 1 */
-    $data['node:panopoly_page:default:featured']->display->content['new-11']->css = ''; /* WAS: array() */
-    $data['node:panopoly_page:default:featured']->display->content['new-11']->position = 3; /* WAS: 1 */
-    $data['node:panopoly_page:default:featured']->display->content['new-11']->subtype = 'node_links'; /* WAS: 'node_title' */
-    $data['node:panopoly_page:default:featured']->display->content['new-11']->type = 'node_links'; /* WAS: 'node_title' */
-    $data['node:panopoly_page:default:featured']->display->content['new-12']->configuration = ''; /* WAS: array(
-      'label' => 'hidden',
-      'formatter' => 'text_summary_or_trimmed',
-      'delta_limit' => 0,
-      'delta_offset' => 0,
-      'delta_reversed' => FALSE,
+    $data['node:panopoly_page:default:featured']->display->content['new-10']->css = ''; /* WAS: array() */
+    $data['node:panopoly_page:default:featured']->display->content['new-10']->position = 3; /* WAS: 0 */
+    $data['node:panopoly_page:default:featured']->display->content['new-10']->subtype = 'node_links'; /* WAS: 'node:field_featured_image' */
+    $data['node:panopoly_page:default:featured']->display->content['new-10']->type = 'node_links'; /* WAS: 'entity_field' */
+    $data['node:panopoly_page:default:featured']->display->content['new-11']->configuration = ''; /* WAS: array(
+      'link' => 1,
       'context' => 'panelizer',
-      'override_title' => 0,
+      'override_title' => 1,
       'override_title_text' => '',
     ) */
-    $data['node:panopoly_page:default:featured']->display->content['new-12']->position = 0; /* WAS: 2 */
+    $data['node:panopoly_page:default:featured']->display->content['new-11']->position = 0; /* WAS: 1 */
+    $data['node:panopoly_page:default:featured']->display->content['new-11']->style = ''; /* WAS: '' */
+    $data['node:panopoly_page:default:featured']->display->content['new-11']->subtype = 'node:field_featured_image'; /* WAS: 'node_title' */
+    $data['node:panopoly_page:default:featured']->display->content['new-11']->type = 'entity_field'; /* WAS: 'node_title' */
+    $data['node:panopoly_page:default:featured']->display->content['new-12']->configuration['link'] = 1; /* WAS: '' */
+    $data['node:panopoly_page:default:featured']->display->content['new-12']->configuration['override_title'] = 1; /* WAS: 0 */
+    $data['node:panopoly_page:default:featured']->display->content['new-12']->position = 1; /* WAS: 2 */
     $data['node:panopoly_page:default:featured']->display->content['new-12']->style = ''; /* WAS: '' */
-    $data['node:panopoly_page:default:featured']->display->content['new-12']->subtype = 'node:field_featured_image'; /* WAS: 'node:body' */
+    $data['node:panopoly_page:default:featured']->display->content['new-12']->subtype = 'node_title'; /* WAS: 'node:body' */
+    $data['node:panopoly_page:default:featured']->display->content['new-12']->type = 'node_title'; /* WAS: 'entity_field' */
     $data['node:panopoly_page:default:featured']->display->content['new-9'] = (object) array(
           'pid' => 'new-9',
-          'panel' => 'contentmain',
-          'type' => 'node_title',
-          'subtype' => 'node_title',
-          'shown' => TRUE,
-          'access' => array(),
-          'configuration' => array(
-            'link' => 1,
-            'context' => 'panelizer',
-            'override_title' => 1,
-            'override_title_text' => '',
-          ),
-          'cache' => array(),
-          'css' => array(),
-          'extras' => array(),
-          'position' => 1,
-          'locks' => array(),
-        ); /* WAS: '' */
-    $data['node:panopoly_page:default:featured']->display->panels['contentmain']['0'] = 'new-9'; /* WAS: 'new-10' */
-    $data['node:panopoly_page:default:featured']->display->panels['contentmain']['1'] = 'new-10'; /* WAS: 'new-11' */
-    $data['node:panopoly_page:default:featured']->display->panels['contentmain']['2'] = 'new-11'; /* WAS: 'new-12' */
-    $data['node:panopoly_page:default:featured']->display->panels['contentmain']['3'] = 'new-12'; /* WAS: 'new-13' */
-    unset($data['node:panopoly_page:default:featured']->display->content['new-13']);
-  }
-  if (isset($data['node:panopoly_page:default:teaser'])) {
-    $data['node:panopoly_page:default:teaser']->display->content['new-13'] = (object) array(
-          'pid' => 'new-13',
           'panel' => 'contentmain',
           'type' => 'entity_field',
           'subtype' => 'node:body',
           'shown' => TRUE,
           'access' => array(),
           'configuration' => array(
-            'label' => 'hidden',
-            'formatter' => 'text_summary_or_trimmed',
+            'context' => 'panelizer',
+            'override_title' => 0,
+            'override_title_text' => '',
             'delta_limit' => 0,
             'delta_offset' => 0,
             'delta_reversed' => FALSE,
-            'formatter_settings' => array(
-              'trim_length' => 600,
-            ),
-            'context' => 'panelizer',
-            'override_title' => 1,
-            'override_title_text' => '',
+            'formatter' => 'text_summary_or_trimmed',
+            'label' => 'hidden',
           ),
           'cache' => array(),
           'css' => array(),
           'extras' => array(),
-          'position' => 1,
+          'position' => 2,
           'locks' => array(),
         ); /* WAS: '' */
-    $data['node:panopoly_page:default:teaser']->display->content['new-14']->configuration['build_mode'] = 'teaser'; /* WAS: '' */
-    $data['node:panopoly_page:default:teaser']->display->content['new-14']->configuration['identifier'] = ''; /* WAS: '' */
-    $data['node:panopoly_page:default:teaser']->display->content['new-14']->configuration['link'] = TRUE; /* WAS: '' */
-    $data['node:panopoly_page:default:teaser']->display->content['new-14']->configuration['override_title'] = FALSE; /* WAS: 1 */
-    $data['node:panopoly_page:default:teaser']->display->content['new-14']->css = ''; /* WAS: array() */
-    $data['node:panopoly_page:default:teaser']->display->content['new-14']->position = 2; /* WAS: 0 */
-    $data['node:panopoly_page:default:teaser']->display->content['new-14']->subtype = 'node_links'; /* WAS: 'node:field_featured_image' */
-    $data['node:panopoly_page:default:teaser']->display->content['new-14']->type = 'node_links'; /* WAS: 'entity_field' */
-    $data['node:panopoly_page:default:teaser']->display->content['new-15']->configuration['formatter'] = 'image'; /* WAS: 'text_summary_or_trimmed' */
-    $data['node:panopoly_page:default:teaser']->display->content['new-15']->configuration['formatter_settings']['image_link'] = 'content'; /* WAS: '' */
-    $data['node:panopoly_page:default:teaser']->display->content['new-15']->configuration['formatter_settings']['image_style'] = 'panopoly_image_quarter'; /* WAS: '' */
-    $data['node:panopoly_page:default:teaser']->display->content['new-15']->position = 0; /* WAS: 1 */
+    $data['node:panopoly_page:default:featured']->display->panels['contentmain']['0'] = 'new-9'; /* WAS: 'new-10' */
+    $data['node:panopoly_page:default:featured']->display->panels['contentmain']['1'] = 'new-10'; /* WAS: 'new-11' */
+    $data['node:panopoly_page:default:featured']->display->panels['contentmain']['2'] = 'new-11'; /* WAS: 'new-12' */
+    $data['node:panopoly_page:default:featured']->display->panels['contentmain']['3'] = 'new-12'; /* WAS: 'new-13' */
+    unset($data['node:panopoly_page:default:featured']->display->content['new-12']->configuration['delta_limit']);
+    unset($data['node:panopoly_page:default:featured']->display->content['new-12']->configuration['delta_offset']);
+    unset($data['node:panopoly_page:default:featured']->display->content['new-12']->configuration['delta_reversed']);
+    unset($data['node:panopoly_page:default:featured']->display->content['new-12']->configuration['formatter']);
+    unset($data['node:panopoly_page:default:featured']->display->content['new-12']->configuration['label']);
+    unset($data['node:panopoly_page:default:featured']->display->content['new-13']);
+  }
+  if (isset($data['node:panopoly_page:default:teaser'])) {
+    $data['node:panopoly_page:default:teaser']->display->content['new-13'] = (object) array(
+          'pid' => 'new-13',
+          'panel' => 'contentmain',
+          'type' => 'node_links',
+          'subtype' => 'node_links',
+          'shown' => TRUE,
+          'access' => array(),
+          'configuration' => array(
+            'context' => 'panelizer',
+            'override_title' => FALSE,
+            'override_title_text' => '',
+            'build_mode' => 'teaser',
+            'identifier' => '',
+            'link' => TRUE,
+          ),
+          'cache' => array(),
+          'css' => '',
+          'extras' => array(),
+          'position' => 2,
+          'locks' => array(),
+        ); /* WAS: '' */
+    $data['node:panopoly_page:default:teaser']->display->content['new-14']->style = ''; /* WAS: '' */
     $data['node:panopoly_page:default:teaser']->display->content['new-15']->style = ''; /* WAS: '' */
-    $data['node:panopoly_page:default:teaser']->display->content['new-15']->subtype = 'node:field_featured_image'; /* WAS: 'node:body' */
     $data['node:panopoly_page:default:teaser']->display->panels['contentmain']['0'] = 'new-13'; /* WAS: 'new-14' */
     $data['node:panopoly_page:default:teaser']->display->panels['contentmain']['1'] = 'new-14'; /* WAS: 'new-15' */
     $data['node:panopoly_page:default:teaser']->display->panels['contentmain']['2'] = 'new-15'; /* WAS: 'new-16' */
-    unset($data['node:panopoly_page:default:teaser']->display->content['new-14']->configuration['delta_limit']);
-    unset($data['node:panopoly_page:default:teaser']->display->content['new-14']->configuration['delta_offset']);
-    unset($data['node:panopoly_page:default:teaser']->display->content['new-14']->configuration['delta_reversed']);
-    unset($data['node:panopoly_page:default:teaser']->display->content['new-14']->configuration['formatter']);
-    unset($data['node:panopoly_page:default:teaser']->display->content['new-14']->configuration['formatter_settings']);
-    unset($data['node:panopoly_page:default:teaser']->display->content['new-14']->configuration['label']);
-    unset($data['node:panopoly_page:default:teaser']->display->content['new-15']->configuration['formatter_settings']['trim_length']);
     unset($data['node:panopoly_page:default:teaser']->display->content['new-16']);
   }
 }
